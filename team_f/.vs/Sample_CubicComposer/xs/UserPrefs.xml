@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{E96F0B4B-F55E-DA5C-B3E6-401E77F6BE74}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UndoButtonCS.cs">
+    <Files>
+      <File FileName="Assets/TargetController.cs" Line="13" Column="1" />
+      <File FileName="Assets/CamCtrl.cs" />
+      <File FileName="Assets/Scorer.cs" />
+      <File FileName="Assets/PartsControler.cs" Line="46" Column="13" />
+      <File FileName="Assets/UndoButton.cs" Line="22" Column="71" NotebookId="1" />
+      <File FileName="Assets/UndoButtonCS.cs" Line="22" Column="38" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sample_CubicComposer" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="UndoButtonCS.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="59167432-1cd7-433b-b2e6-5231a797ee2d" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
