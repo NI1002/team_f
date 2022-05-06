@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UndoButtonCS : MonoBehaviour
+public class CameraResetButtonSC : MonoBehaviour
 {
-    private GameObject partscontroller;
-    private GameObject targetcontroller;
+    private GameObject MainCamera;
     // Start is called before the first frame update
     void Start()
     {
-        targetcontroller = GameObject.Find("TargetControll");
+        MainCamera = GameObject.Find("Main Camera");
     }
 
     // Update is called once per frame
@@ -20,6 +19,7 @@ public class UndoButtonCS : MonoBehaviour
 
     public void OnClick()
     {
-        targetcontroller.GetComponent<TargetController>().ReqestUndo();
+        Debug.Log("PassBottonOnclick()");
+        MainCamera.GetComponent<CameraMover>().ResetCameraTransform();
     }
 }
