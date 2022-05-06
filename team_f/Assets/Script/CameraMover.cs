@@ -32,6 +32,8 @@ public class CameraMover : MonoBehaviour
     private Vector3 _presentCamPos;
     //初期状態 Rotation
     private Quaternion _initialCamRotation;
+    //初期状態 Vector
+    private Vector3 _initialCamVector3;
     //UIメッセージの表示
     private bool _uiMessageActiv;
 
@@ -39,8 +41,9 @@ public class CameraMover : MonoBehaviour
     {
         _camTransform = this.gameObject.transform;
 
-        //初期回転の保存
+        //初期座標、回転の保存
         _initialCamRotation = this.gameObject.transform.rotation;
+        _initialCamVector3 = this.gameObject.transform.position;
     }
 
     void Update()
@@ -50,10 +53,9 @@ public class CameraMover : MonoBehaviour
 
         if (_cameraMoveActive)
         {
-            ResetCameraRotation(); //回転角度のみリセット
             CameraRotationMouseControl(); //カメラの回転 マウス
             CameraSlideMouseControl(); //カメラの縦横移動 マウス
-            CameraPositionKeyControl(); //カメラのローカル移動 キー
+           // CameraPositionKeyControl(); //カメラのローカル移動 キー
         }
     }
 
@@ -72,14 +74,12 @@ public class CameraMover : MonoBehaviour
         }
     }
 
-    //回転を初期状態にする
-    private void ResetCameraRotation()
+    //カメラの位置、角度を初期状態にする。ボタンオブジェクトのスクリプトより呼び出される
+    public void ResetCameraTransform()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            this.gameObject.transform.rotation = _initialCamRotation;
-            Debug.Log("Cam Rotate : " + _initialCamRotation.ToString());
-        }
+        this.gameObject.transform.rotation = _initialCamRotation;
+        this.gameObject.transform.position = _initialCamVector3; 
+        Debug.Log("Cam Rotate : " + _initialCamRotation.ToString());
     }
 
     //カメラの回転 マウス

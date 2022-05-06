@@ -48,5 +48,12 @@ public class TargetController : MonoBehaviour
 		Debug.Log("ReqestUndo()が起動");
 		TargetList[nowTarget].GetComponent<PartsControler>().UndoParts();
 	}
+
+	// 現在のターゲットにパーツチェンジ司令を出す
+	public void ReqestChangeParts()
+	{
+		Debug.Log("ReqestChangeParts()が起動");
+		TargetList[nowTarget].GetComponent<PartsControler>().ChangeParts();
+	}
 }
 

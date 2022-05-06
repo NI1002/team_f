@@ -55,16 +55,17 @@
   <ItemGroup>
     <Compile Include="Assets/Script/TargetController.cs" />
     <Compile Include="Assets/Script/CamCtrl.cs" />
-    <Compile Include="Assets/Script/UndoButtonCS.cs" />
+    <Compile Include="Assets/Script/ChangePartsButtonCS.cs" />
     <Compile Include="Assets/Script/Generate_ogj.cs" />
     <Compile Include="Assets/Script/ButtonTest.cs" />
+    <Compile Include="Assets/Script/CameraMover.cs" />
     <Compile Include="Assets/Script/ControlOnOffParts.cs" />
     <Compile Include="Assets/Script/PartsControler.cs" />
     <Compile Include="Assets/Script/Timer.cs" />
     <Compile Include="Assets/Script/PassButtonCS.cs" />
     <Compile Include="Assets/Script/SceneViewCamera.cs" />
     <Compile Include="Assets/Script/Scorer.cs" />
-    <Compile Include="Assets/Script/CameraMover.cs" />
+    <Compile Include="Assets/Script/CameraResetButtonSC.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

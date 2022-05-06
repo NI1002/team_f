@@ -26,7 +26,7 @@ public class PartsControler : MonoBehaviour
 			//　Qキーが押されたら操作パーツを次のパーツに変更する
 			if (Input.GetKeyDown("q"))
 			{
-				ChangeParts(nowParts);
+				ChangeParts();
 			}
 
 			bool compleatfrag = true;
@@ -42,12 +42,12 @@ public class PartsControler : MonoBehaviour
 	}
 
 	//　操作パーツ変更メソッド
-	void ChangeParts(int tempNowParts)
+	public void ChangeParts()
 	{
 		//　現在操作しているパーツを移動できなくする
-		PartsList[tempNowParts].GetComponent<ControlOnOffParts>().ChangeControl(false);
+		PartsList[nowParts].GetComponent<ControlOnOffParts>().ChangeControl(false);
 		//　次のパーツの番号を設定
-		var nextParts = tempNowParts + 1;
+		var nextParts = nowParts + 1;
 		if (nextParts >= PartsList.Count)
 		{
 			nextParts = 0;
